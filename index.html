@@ -3,28 +3,106 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Min Spelsida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omar & Minnas Spel</title>
   <style>
     body {
-      background-color: #00008B; /* Mörkblå bakgrund */
-      color: white; /* Vit text för kontrast */
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001f3f;
+      color: white;
+    }
+
+    header {
+      background-color: #003366;
+      padding: 1em;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 0.5em;
+    }
+
+    main {
+      padding: 2em;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+
+    section {
+      background-color: #004080;
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #002244;
+      margin-top: 2em;
+    }
+
+    @media (min-width: 600px) {
+      main {
+        grid-template-columns: 1fr 1fr;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Välkommen till Omar&Minnas Spel!</h1>
+    <h1>Välkommen till Omar & Minnas Spel</h1>
     <nav>
-      <a href="hemsida1.html" style="color:white;">Hemsida 1</a> |
-      <a href="hemsida2.html" style="color:white;">Hemsida 2</a>
+      <a href="hemsida1.html">Hem</a>
+      <a href="hemsida2.html">Om Spelet</a>
+      
     </nav>
   </header>
 
   <main>
-    <h2>Spelbeskrivning</h2>
-    <p>Klicka på länkarna för mer beskrivning.</p>
+    <section>
+      <h2>Spelbeskrivning</h2>
+      <p>Detta är ett 3D fighting-spel där två spelare möts i en boxningsmatch. Spelarna använder WASD och piltangenterna för att röra sig, F för att attackera och när en av spelarna har 0 HP kvar knockas spelaren
+    </section>
+
+    <section>
+      <h2>Funktioner</h2>
+      <ul>
+        <li>Hälsomätare </li>
+        <li>knockout när du träffat tillräckligt många slag</li>
+        <li>Boxning Animationer</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Bild från spelet</h2>
+      <img src="images/Boxare.png" alt=boxare.png>
+    </section>
+
+    <section>
+      <h2>Om Utvecklingen</h2>
+      <p>Spelet gjordes av Klivaren Omar och minna. Vi har använt tutorials från youtube och unitylearning och tagit gratis assets från Unity Asset Store.</p>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Omar & Minna | <a href="https://ntigymnasiet.se" style="color: lightblue;">NTI Gymnasiet</a></p>
+  </footer>
 
 </body>
 </html>
